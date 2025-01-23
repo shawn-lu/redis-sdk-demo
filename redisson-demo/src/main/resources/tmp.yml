@@ -1,0 +1,7 @@
+spring:
+  redis:
+    database: 6
+    timeout: 30000
+    password: XHNSY2PiBp76htgrs54wKoCeqynbgtrd
+    cluster:
+      nodes: redis-fzmwsit.mid.io:30181,redis-fzmwsit.mid.io:30181,redis-fzmwsit.mid.io:30181,redis-fzmwsit.mid.io:30181,redis-fzmwsit.mid.io:30181,redis-fzmwsit.mid.io:30181

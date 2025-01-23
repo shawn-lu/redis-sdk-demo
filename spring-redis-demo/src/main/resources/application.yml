@@ -1,0 +1,67 @@
+server:
+  port: 8087
+#spring:
+#  redis:
+#    redisson:
+#      config: classpath:redisson.yml
+#          - "redis://10.228.225.166:6379"
+#spring:
+#  redis:
+#    cluster:
+#      nodes:
+#        - 10.228.225.166:6379
+#    password: OQ2wjzTINKHVmqLx45YGyRWgasCd1v78
+#
+#spring:
+#  redis:
+#    redisson:
+#      config: |
+#        clusterServersConfig:
+#          idleConnectionTimeout: 10000
+#          connectTimeout: 10000
+#          timeout: 3000
+#          retryAttempts: 3
+#          retryInterval: 1500
+#          failedSlaveReconnectionInterval: 3000
+#          failedSlaveCheckInterval: 60000
+#          password: null
+#          subscriptionsPerConnection: 5
+#          clientName: null
+#          loadBalancer: !<org.redisson.connection.balancer.RoundRobinLoadBalancer> {}
+#          subscriptionConnectionMinimumIdleSize: 1
+#          subscriptionConnectionPoolSize: 50
+#          slaveConnectionMinimumIdleSize: 24
+#          slaveConnectionPoolSize: 64
+#          masterConnectionMinimumIdleSize: 24
+#          masterConnectionPoolSize: 64
+#          readMode: "SLAVE"
+#          subscriptionMode: "SLAVE"
+#          nodeAddresses:
+#          - "redis://127.0.0.1:7004"
+#          - "redis://127.0.0.1:7001"
+#          - "redis://127.0.0.1:7000"
+#          scanInterval: 1000
+#          pingConnectionInterval: 0
+#          keepAlive: false
+#          tcpNoDelay: false
+#        threads: 16
+#        nettyThreads: 32
+#        codec: !<org.redisson.codec.MarshallingCodec> {}
+#        transportMode: "NIO"
+# -DAPOLLO_CLUSTER=FZ -DAPOLLO_CACHEDIR=/Users/luxufeng/IdeaProjects/redis-sdk-demo/spring-redis-demo/apollo-cache
+#  -DAPOLLO_BOOTSTRAP_ENABLED=true -DAPOLLO_BOOTSTRAP_NAMESPACES=application.yml,redisson.yml -DAPOLLO_BOOTSTRAP_EAGERLOAD_ENABLED=true
+apollo:
+  bootstrap:
+    enabled: true
+    namespaces: application.yml,redisson.yml
+  meta: http://apollo-sit-fzmw.yonghui.cn:8080
+  cluster: FZ
+  cacheDir: /Users/luxufeng/IdeaProjects/redis-sdk-demo/spring-redis-demo/apollo-cache
+app:
+  id: zjjgl--test-abcd
+
+
+
+spring:
+  active:
+    profiles: default

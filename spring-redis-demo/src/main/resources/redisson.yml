@@ -1,0 +1,7 @@
+
+clusterServersConfig:
+  readMode: "SLAVE"
+  subscriptionMode: "SLAVE"
+  password: OQ2wjzTINKHVmqLx45YGyRWgasCd1v78
+  nodeAddresses:
+    - redis://10.228.225.166:6379
